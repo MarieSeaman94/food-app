@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 function Popular() {
+  
   useEffect(() => {
     getPopular();
   },[]);
