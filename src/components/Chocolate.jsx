@@ -4,4 +4,4 @@ function Chocolate() {
   )
 }
 
-export default Chocolate
+export default Chocolate;
