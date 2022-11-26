@@ -51,6 +51,12 @@ const StyledLink = styled(NavLink)`
     color: white;
     font-size:0.8rem;
   }
+
+  svg {
+    color: white;
+    font-size: 1.5rem;
+  }
+
 `;
 
 

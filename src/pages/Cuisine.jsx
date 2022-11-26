@@ -30,7 +30,7 @@ function Cuisine() {
           </Card>
         );
       })}
-    </Grid>;
+    </Grid>
   )
 }
 
