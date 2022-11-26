@@ -25,8 +25,16 @@ function Recipe() {
         <img src={details.image} alt="" />
       </div>
       <Info>
-        <Buttons onClick={() => setActiveTab("instructions")}>Instructions</Buttons>
-        <Buttons onClick={() => setActiveTab("ingedients")}>Ingredients</Buttons>
+        <Buttons className={activeTab === "instructions" ? "active" : '' }
+         onClick={() => setActiveTab("instructions")}
+         >
+         Instructions
+         </Buttons>
+        <Buttons className={activeTab === "ingredients" ? "active" : '' }
+         onClick={() => setActiveTab("ingredients")}
+         >
+          Ingredients
+          </Buttons>
       </Info>
     </DetailWrapper>
   );
