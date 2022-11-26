@@ -27,8 +27,8 @@ function Cuisine() {
           <Card key={item.id}>
             <img src={item.image} alt="" >
             <h4>{item.title}</h4>
-         </Card>
-        )
+          </Card>
+        );
       })}
     </Grid>
   );
