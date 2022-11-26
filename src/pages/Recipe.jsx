@@ -18,8 +18,17 @@ function Recipe() {
   },[params.name]);
 
   return (
-    <div>{details.title}</div>
-  )
+    <DetailWrapper>
+      <div>
+        <h2>{details.title}</h2>
+        <img src={details.image} alt="" />
+      </div>
+      <Info>
+        <Buttons>Instructions</Buttons>
+        <Buttons>Ingredients</Buttons>
+      </Info>
+    </DetailWrapper>
+  );
 }
 
 const DetailWrapper = styled.div`
@@ -42,16 +51,16 @@ const DetailWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Buttons = styled.button`
   padding: 3rem;
   color: #313131;
   background: white;
   border: 2px solid black;
   margin-right: 2rem;
   font-weight: 600;
-`
+`;
 const Info = styled.div`
-  
-`
+  margin-left: 10rem;
+`;
 
 export default Recipe;
