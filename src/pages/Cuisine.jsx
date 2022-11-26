@@ -5,15 +5,15 @@ import {Link, useParams} from 'react-router-dom';
 
 function Cuisine() {
 
-  const getCuisine = async (name) => {
-
-    const [cuisine, setCuisine] = useState([]);
+  const [cuisine, setCuisine] = useState([]);
     let params = useParams();
 
-    const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`)
+  const getCuisine = async (name) => {
+    const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`);
+
     const recipes = await data.json();
     setCuisine(recipes.results);
-  }
+  };
 
   useEffect(() => {
     getCuisine(params.type);
