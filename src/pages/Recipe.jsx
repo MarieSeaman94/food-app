@@ -64,7 +64,7 @@ const Buttons = styled.button`
   padding: 3rem;
   color: #313131;
   background: white;
-  border: 2px solid black;
+  border: 2px solid #313131;
   margin-right: 2rem;
   font-weight: 600;
 `;

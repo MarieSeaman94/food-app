@@ -15,7 +15,7 @@ function Search() {
   };
   return (
     <FormStyle onSubmit={submitHandler}>
-      <div>
+      <div id="searchbar">
         <FaSearch></FaSearch>
         <input
         onChange={(e) => setInput(e.target.value)}
@@ -39,12 +39,19 @@ const FormStyle = styled.form`
     border: none;
     background: linear-gradient(35deg, #494949, #313131);
     font-size: 1.5rem;
-    width: 100%;
+    width: 30vw;
     color: white;
     padding: 1rem 3rem;
     border: none;
     border-radius: 1rem;
     outline: none;
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  #searchbar {
+    display:flex;
+    justify-content: center;
   }
 
   svg{
