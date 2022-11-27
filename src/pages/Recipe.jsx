@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 
 function Recipe() {
-
   let params = useParams();
   const [details, setDetails] = useState({});
   const [activeTab, setActiveTab] = useState("instructions");
@@ -35,6 +34,9 @@ function Recipe() {
          >
           Ingredients
           </Buttons>
+          <div>
+            <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
+          </div>
       </Info>
     </DetailWrapper>
   );
