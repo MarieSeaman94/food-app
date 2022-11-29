@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Nav>
         <GiKnifeFork />
-        <Logo to={"/"}>Yum!</Logo>
+        <Logo to={"/"}>Yum</Logo>
       </Nav>
         <Search />
         <Category />
@@ -27,7 +27,7 @@ const Logo = styled(Link)`
   font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Lobster Two', cursive;
-`
+`;
 
 const Nav = styled.div`
   padding: 4rem 0rem;
@@ -38,6 +38,6 @@ const Nav = styled.div`
   svg{
     font-size: 2rem;
   }
-`
+`;
 
 export default App;
