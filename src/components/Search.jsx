@@ -41,25 +41,28 @@ const FormStyle = styled.form`
     font-size: 1.5rem;
     width: 30vw;
     color: white;
-    padding: 1rem 3rem;
+    padding: 1rem 0.5rem;
     border: none;
     border-radius: 1rem;
     outline: none;
-    text-align: left;
+    text-align: center;
     margin-top: 1rem;
   }
 
-  #searchbar {
-    display:flex;
-    justify-content: center;
-  }
+
 
   svg{
     position: absolute;
     top: 50%;
     left: 0%;
-    transform: translate(100%, -50%);
+
     color: white;
+  }
+
+  #searchbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
 `;
 export default Search;

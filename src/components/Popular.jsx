@@ -35,8 +35,8 @@ function Popular() {
         <Wrapper>
           <h3>Trending Recipes</h3>
           <Splide options={{
-            perPage: 3,
-            arrows: false,
+            perPage: 4,
+            arrows: true,
             paginations: false,
             drag: 'free',
             gap: '3rem',
@@ -65,7 +65,8 @@ margin: 4rem 0rem;
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
+  height: 20rem;
+  width: 15rem;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
