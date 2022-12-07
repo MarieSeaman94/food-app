@@ -13,8 +13,8 @@ function App() {
       <Nav>
         <GiKnifeFork />
         <Logo to={"/"}>Yum!</Logo>
-      </Nav>
         <Search />
+      </Nav>
         <Category />
         <Pages />
       </BrowserRouter>
