@@ -28,9 +28,6 @@ function Chocolate() {
       };
   };
 
-
-
-
   return <div>
         <Wrapper>
           <h3>Chocolate Recipes</h3>
@@ -65,7 +62,6 @@ margin: 2rem 0rem;
 `;
 
 const Card = styled.div`
-
   height: 20rem;
   width: 15rem;
   border-radius: 2rem;
