@@ -36,7 +36,7 @@ const Nav = styled.div`
   align-items: center;
   background-color: #F16C28;
   width: 100vw;
-  margin: 0;
+  margin-bottom: 2rem;
 
   svg{
     font-size: 2rem;
