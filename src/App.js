@@ -36,13 +36,13 @@ const Nav = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: rgb(241, 108, 40);
-  opacity: .83;
   min-width: 100vw;
   margin-bottom: 2rem;
 
   svg{
     font-size: 2rem;
   }
+
 `;
 
 export default App;

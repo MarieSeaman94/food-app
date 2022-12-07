@@ -61,8 +61,7 @@ const FormStyle = styled.form`
 
   #searchbar {
     display: flex;
-    justify-content: center;
-    position: relative;
+    justify-content: flex-end;
   }
 `;
 export default Search;
