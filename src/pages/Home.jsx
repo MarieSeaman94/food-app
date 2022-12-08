@@ -1,5 +1,6 @@
 import Chocolate from "../components/Chocolate";
 import Popular from "../components/Popular";
+import Dinner from "../components/Dinner";
 import { motion } from 'framer-motion';
 
 import React from 'react'
@@ -14,6 +15,7 @@ function Home() {
     >
       <Popular />
       <Chocolate />
+      <Dinner />
     </motion.div>
   );
 }
