@@ -22,25 +22,28 @@ function App() {
   );
 }
 
+
+
 const Logo = styled(Link)`
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Lobster', cursive;
   color: black;
+
 `;
 
 const Nav = styled.div`
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(241, 108, 40);
   min-width: 100vw;
   margin-bottom: 2rem;
 
   svg{
     font-size: 2rem;
+    p
   }
 
 `;
