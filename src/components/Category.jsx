@@ -46,6 +46,7 @@ const StyledLink = styled(NavLink)`
   height: 6rem;
   cursor: pointer;
   transform: scale(0.8);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   h4{
     color: white;

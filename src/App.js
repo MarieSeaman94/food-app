@@ -26,11 +26,12 @@ function App() {
 
 const Span = styled.div`
   margin-top: 1rem;
-  background-color: #f16c28;
+  background-color: #f47535;
   border: none;
   border-radius: 50%;
   width: fit-content;
   padding: 2rem 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   svg{
     font-size: 2rem;
@@ -50,7 +51,7 @@ const Nav = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   position: relative;
   bottom: 7rem;
 `;

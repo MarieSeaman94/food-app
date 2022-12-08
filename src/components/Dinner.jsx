@@ -62,11 +62,12 @@ margin: 2rem 0rem;
 `;
 
 const Card = styled.div`
-  height: 20rem;
-  width: 15rem;
-  border-radius: 2rem;
-  overflow: hidden;
-  position: relative;
+height: 20rem;
+width: 18rem;
+border-radius: 2rem;
+overflow: hidden;
+position: relative;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   img{
     border-radius: 2rem;
