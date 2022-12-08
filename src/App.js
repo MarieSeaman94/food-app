@@ -10,18 +10,17 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <GiKnifeFork />
+      <Logo to={"/"}>Yum!</Logo>
       <Nav>
-        <GiKnifeFork />
-        <Logo to={"/"}>Yum!</Logo>
         <Search />
-      </Nav>
         <Category />
+      </Nav>
         <Pages />
       </BrowserRouter>
     </div>
   );
 }
-
 
 
 const Logo = styled(Link)`
@@ -31,21 +30,18 @@ const Logo = styled(Link)`
   font-family: 'Lobster', cursive;
   color: black;
 
+  svg{
+    font-size: 2rem;
+  }
 `;
 
 const Nav = styled.div`
-  padding: 0.5rem 0rem;
+  padding: 0rem 0rem;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  min-width: 100vw;
   margin-bottom: 2rem;
-
-  svg{
-    font-size: 2rem;
-    p
-  }
-
 `;
 
 export default App;

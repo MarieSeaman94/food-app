@@ -28,7 +28,8 @@ function Search() {
 
 
 const FormStyle = styled.form`
-  margin: 0rem 45rem;
+  margin: auto;
+
 
   div {
     position: relative;
@@ -51,15 +52,12 @@ const FormStyle = styled.form`
 
   svg{
     position: absolute;
-    top: 42%;
-    left: 0%;
+    top: 50%;
+    left: 3%;
 
     color: white;
   }
 
-  #searchbar {
-    display: flex;
-    justify-content: flex-end;
-  }
+
 `;
 export default Search;
