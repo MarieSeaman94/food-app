@@ -61,7 +61,7 @@ function Popular() {
 }
 
 const Wrapper = styled.div`
-margin: 4rem 0rem;
+margin-bottom: 2rem;
 `;
 
 const Card = styled.div`

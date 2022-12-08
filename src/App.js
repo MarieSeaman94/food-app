@@ -31,7 +31,11 @@ const Span = styled.div`
   border-radius: 50%;
   width: fit-content;
   padding: 2rem 1rem;
-`
+
+  svg{
+    font-size: 2rem;
+  }
+`;
 
 const Logo = styled(Link)`
   text-decoration: none;
@@ -39,10 +43,6 @@ const Logo = styled(Link)`
   font-weight: 400;
   font-family: 'Lobster', cursive;
   color: black;
-
-  svg{
-    font-size: 2rem;
-  }
 `;
 
 const Nav = styled.div`
@@ -50,7 +50,9 @@ const Nav = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  
+  position: relative;
+  bottom: 7rem;
 `;
 
 export default App;
