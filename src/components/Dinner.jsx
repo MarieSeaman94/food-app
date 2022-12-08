@@ -4,33 +4,33 @@ import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Link } from 'react-router-dom';
 
-function Chocolate() {
+function Dinner() {
 
-  const [chocolate, setChocolate] = useState([]);
+  const [dinner, setDinner] = useState([]);
 
   useEffect(() => {
-    getChocolate();
+    getDinner();
   },[]);
 
-  const getChocolate = async () => {
+  const getDinner = async () => {
 
-    const check = localStorage.getItem('chocolate');
+    const check = localStorage.getItem('dinner');
     if(check){
-      setChocolate(JSON.parse(check));
+      setDinner(JSON.parse(check));
     }else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=chocolate`
+        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=dinner`
         );
       const data = await api.json();
-      localStorage.setItem('chocolate', JSON.stringify(data.recipes));
-      setChocolate(data.recipes);
+      localStorage.setItem('dinner', JSON.stringify(data.recipes));
+      setDinner(data.recipes);
       console.log(data.recipes);
       };
   };
 
   return <div>
         <Wrapper>
-          <h3>Chocolate Recipes</h3>
+          <h3>Dinner Recipes</h3>
           <Splide options={{
             perPage: 4,
             arrows: true,
@@ -39,7 +39,7 @@ function Chocolate() {
             gap: '3rem',
           }}
           >
-          {chocolate.map((recipe) => {
+          {dinner.map((recipe) => {
             return(
               <SplideSlide key={recipe.id}>
               <Card>
