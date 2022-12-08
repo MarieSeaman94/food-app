@@ -10,8 +10,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <GiKnifeFork />
-      <Logo to={"/"}>Yum!</Logo>
+      <Span>
+        <GiKnifeFork />
+        <Logo to={"/"}>Yum!</Logo>
+      </Span>
       <Nav>
         <Search />
         <Category />
@@ -22,6 +24,14 @@ function App() {
   );
 }
 
+const Span = styled.div`
+  margin-top: 1rem;
+  background-color: #f16c28;
+  border: none;
+  border-radius: 50%;
+  width: fit-content;
+  padding: 2rem 1rem;
+`
 
 const Logo = styled(Link)`
   text-decoration: none;
@@ -39,9 +49,8 @@ const Nav = styled.div`
   padding: 0rem 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 `;
 
 export default App;
